@@ -7,6 +7,7 @@ h1{
     width: 200px;
     position: fixed;
     top: 0;
+    z-index: 99;
     
     
     
@@ -21,6 +22,15 @@ ul ol{
     float: right;
     
 
+}
+nav{
+  border-bottom-style: solid;
+  border-color: #cccccc;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
 }
 
 body{
@@ -60,7 +70,6 @@ p{
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     text-align: left;
     text-size-adjust: 40px;
-    margin-top: -30px;
     line-height: 2.5em;
     margin-left: 20px;
     margin-right: 20px;
@@ -78,14 +87,7 @@ footer{
     
 
 }
-nav{
-    border-bottom-style: solid;
-    border-color: #cccccc;
-    background: #fff;
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
+
 .clearfix::after {
     content: "";
     clear: both;
@@ -179,17 +181,82 @@ input[type=text], select, textarea {
   
  
   @media screen and (max-width: 980px) {
-    .port {
-      display: none;
+    .w3-container{
+      width: auto;
+     }
+    h5{
+      width: auto;
     }
-    @media screen and (max-width: 768px) {
-      div.example {
-        display: none;
+    img{
+      width: auto;
+    }
+    p{
+      width: auto;
+    }
+    form{
+      width: auto;
+    }
+    }
+    @media only screen and (max-width: 768px) {
+      .w3-container{
+        width: 768px;
+       }
+      h5{
+        width: 700px;
       }
+      img{
+        width: auto;
+      }
+      p{
+        width: 740px;
+      }
+      form{
+        width: 600px;
+      }
+      nav{
+        width: 1auto;
+      }
+      input{
+        width: 100px;
+      }
+      footer{
+        width: auto;
+        position: fixed;
+        
+        
+      }
+      
+    }
       @media screen and (max-width: 640px) {
-        div.example {
-          display: none;
+        .w3-container{
+          width: auto;
+         }
+        h5{
+          width: auto;
+        }
+        img{
+          width: auto;
+        }
+        p{
+          width: auto;
+        }
+        form{
+          width: auto;
+      
+          
+        }
+        nav{
+          width: 100%;
+        }
+        .proj{ 
+          width: auto;
+        }
+        footer {
+          width: 450%;
+          position: fixed;
+          bottom: 0;
+          margin-bottom: 0;
+       }
         }
  
 
- 
